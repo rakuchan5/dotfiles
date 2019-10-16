@@ -1,0 +1,21 @@
+[core]
+    # 編集に使うエディタをNeoVimにする
+    editor      = nvim
+    # ページャを無効(デフォルトはless)
+    pager       =
+    # 日本語の文字化けを防ぐ
+    quotepath   = false
+[alias]
+    co = checkout
+    st = status
+    br = branch
+    lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+    # Gitの出力情報を自動でハイライト
+    ui = true
+[diff]
+    # 「git diff」時に実行するスクリプト
+    external = git_diff_wrapper
+[user]
+    name    = rakuchan5
+    email   = llrakuchan5@gmail.com
